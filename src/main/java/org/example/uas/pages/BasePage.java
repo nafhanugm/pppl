@@ -69,7 +69,7 @@ public class BasePage {
 
     protected void clearText(By locator) {
         WebElement element = waitForElementVisible(locator);
-        element.sendKeys(Keys.COMMAND + "a"); // For Mac, use COMMAND + A; for Windows/Linux, use CONTROL + A
+        element.sendKeys(Keys.COMMAND + "a");
         element.sendKeys(Keys.DELETE);
     }
 
