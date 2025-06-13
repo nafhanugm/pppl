@@ -100,6 +100,7 @@ public class WeightPage extends BasePage{
 
     public boolean isWeightHeightDeleted(int initialCount) {
         int currentCount = countCurrentWeightTracks();
+        System.out.println("Initial Count: " + initialCount + ", Current Count: " + currentCount);
         return currentCount - 1 == initialCount;
     }
 

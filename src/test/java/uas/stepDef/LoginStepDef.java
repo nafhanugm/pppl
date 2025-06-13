@@ -37,14 +37,14 @@ public class LoginStepDef {
         loginPage.navigateTo();
     }
 
-    @When("user memasukkan email \"Cek12345@gmail.com\"")
+    @When("user memasukkan email \"Cek123456@gmail.com\"")
     public void userMemasukkanEmail() {
-        loginPage.enterEmail("Cek12345@gmail.com");
+        loginPage.enterEmail("Cek123456@gmail.com");
     }
 
-    @When("user memasukkan password \"Cek12345@gmail.com\"")
+    @When("user memasukkan password \"Cek123456@gmail.com\"")
     public void userMemasukkanPassword() {
-        loginPage.enterPassword("Cek12345@gmail.com");
+        loginPage.enterPassword("Cek123456@gmail.com");
     }
 
     @When("user klik tombol \"Next\"")
