@@ -15,6 +15,6 @@ Feature: Pengisian Token
 
   # Skenario Positif: User mengisi token yang valid
   Scenario: User mengisi token yang valid
-    Given user mengisi token yang valid "ABCDEFII"
+    Given user mengisi token yang valid "indomie1234"
     When user klik tombol "Submit"
     Then token akan terverifikasi dan user berhasil masuk ke halaman utama

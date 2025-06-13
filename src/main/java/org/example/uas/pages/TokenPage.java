@@ -8,7 +8,7 @@ public class TokenPage extends BasePage {
 
     private final By tokenInput = By.xpath("/html/body/div/div/div/div/div/form/div/input");
     private final By submitButton = By.xpath("/html/body/div/div/div/div/div/form/button");
-    private final By failedMessage = By.xpath("/html/body/div/div/div/div/div/form/div/p");
+    private By failedMessage = By.xpath("/html/body/div/div/div/div/div/form/div/p");
 
     public TokenPage(WebDriver driver) {
         super(driver);
@@ -31,6 +31,7 @@ public class TokenPage extends BasePage {
     }
 
     public boolean isFailedMessageDisplayed() {
+        failedMessage = By.xpath("/html/body/div/div/div/div/div/form/div/p");
         return isElementDisplayed(failedMessage) &&
                 getElementText(failedMessage).contains("Invalid or already used product token");
     }

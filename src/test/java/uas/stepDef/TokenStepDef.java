@@ -24,7 +24,7 @@ public class TokenStepDef {
         loginPage = new LoginPage(driver);
         loginPage.navigateTo();
 
-        loginPage.loginWithCredentials("Cek12345@gmail.com", "Cek12345@gmail.com");
+        loginPage.loginWithCredentials("Cek123459@gmail.comm", "Cek123459@gmail.comm");
 
         tokenPage = new TokenPage(driver);
         assertTrue("Token input page is not loaded", tokenPage.isTokenInputDisplayed());
