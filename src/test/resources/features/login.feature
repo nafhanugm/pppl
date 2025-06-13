@@ -9,8 +9,8 @@ Feature: Login Authorization
 
   Scenario: User berhasil login dengan kredensial yang valid
     Given user berada di halaman login
-    When user memasukkan email "Cek123456@gmail.com
-    And user memasukkan password "Cek123456@gmail.com
+    When user memasukkan email "Cek123456@gmail.com"
+    And user memasukkan password "Cek123456@gmail.com"
     And user klik tombol "Next"
     Then data email dan password akan terverifikasi
     And halaman pengisian token muncul
